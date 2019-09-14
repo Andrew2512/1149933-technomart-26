@@ -55,23 +55,27 @@
 
     <h2>Фильтрация товаров</h2>
     <section>Здесь будут фильтры выбора
-      <h2>ПРОИЗВОДИТЕЛИ:</h2>
-      <ul>
-        <li><img src="img/svg-technomart/checkbox-on.svg"><img src="img/svg-technomart/checkbox-off.svg">BOSCH</li>
-        <li><img src="img/svg-technomart/checkbox-on.svg"><img src="img/svg-technomart/checkbox-off.svg">ИНТЕРСКОЛ</li>
-        <li><img src="img/svg-technomart/checkbox-on.svg"><img src="img/svg-technomart/checkbox-off.svg">MAKITA</li>
-        <li><img src="img/svg-technomart/checkbox-on.svg"><img src="img/svg-technomart/checkbox-off.svg">DEWALT</li>
-        <li><img src="img/svg-technomart/checkbox-on.svg"><img src="img/svg-technomart/checkbox-off.svg">HITACHI</li>
-      </ul>
+      <h2>Фильтр товаров:</h2>
+      <form class="filter" method="get" action="#"></form>
+      <fieldset>
+        <legend>Проиводители</legend>
+        <ul>
+            <li><label for="filter-bosch"><input type="checkbox" name="bosch" id="filter-bosch">bosch</li></label>
+            <li><label for="filter-интерскол"><input type="checkbox" name="интерскол" id="filter-bosch">интерскол</li></label>
+            <li><label for="filter-makita"><input type="checkbox" name="makita" id="filter-makita">makita</li></label>
+            <li><label for="filter-dewolt"><input type="checkbox" name="dewolt" id="filter-dewolt">dewolt</li></label>
+            <li><label for="filter-hitachi"><input type="checkbox" name="hitachi" id="filter-hitachi">hitachi</li></label>
+          </ul>
+      </fieldset>
+      <fieldset>
+       <legend>Питание</legend>
+       <ul>
+          <li><label for="filter-akum"><input type="radio" name="product-group" id="filter-akum">аккумуляторные</li>
+          <li><label for="filter-setev"><input type="radio" name="product-group" id="filter-setev">сетевые</li>
+        </ul>
+      </fieldset>
+      <button type="submit">ПОКАЗАТЬ</button>
     </section>
-     <section>
-       <h2>ПИТАНИЕ:</h2>
-      <ul>
-        <li><img src="img/svg-technomart/radio-on.svg"><img src="img/svg-technomart/radio-off.svg"> АККУМУЛЯТОРНЫЕ</li>
-        <li><img src="img/svg-technomart/radio-on.svg"><img src="img/svg-technomart/radio-off.svg">СЕТЕВЫЕ</li>
-      </ul>
-     </section>
-    <button type="button">ПОКАЗАТЬ</button>
 
     <section><!--сам каталог из перфораторов, ячейки-->
       <ul>
@@ -96,6 +100,14 @@
             <img src="img/png/new-flag.png" width="#" height="#" alt="картинка NEW"><!--РАЗОБРАТЬСЯ ЕЩЕ С ЭТИМ ПОЛЕМ-->
             <ul>
               <li><button type="button"><img src="img/svg-technomart/icon-cart.svg">Купить</button></li>
+              <section>
+              <form> 
+               <p>Товар добавлен в корзину!</p>
+              <a href="basket" alt="переход в корзину">Оформить заказ</a>
+              </form>
+              <button tupe="button">Продолжить покупки</button>
+              <button tupe="button" alt="закрыть">X</button>
+              </section>
               <li><button type="button">В закладки</button></li>
             </ul>
           <h3>
